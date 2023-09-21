@@ -21,6 +21,9 @@
            new DriverManager().SetUpDriver(new ChromeConfig());
             var options = new ChromeOptions();
             options.AddArguments(configReader.GetData("option:max"),configReader.GetData("option:incog"));
+            options.AddArguments("--no-sandbox");
+            options.AddArguments("--disable-dev-shm-usage");
+            options.AddArgument("--headless");
            driver = new ChromeDriver(options);
             driver.Navigate().GoToUrl(configReader.GetData("Env:url"));
             return driver;  
