@@ -22,9 +22,13 @@ namespace NewParaBankProject.StepDefinitions
         [When(@"I enter the following details")]
         public void WhenIEnterTheFollowingDetails(Table table)
         {
-            registerPage.FillFormInfo(table.Rows[0]["firstName"/*.AddRandomDigits()*/], table.Rows[0]["lastName"/*.AddRandomDigits()*/],
-                table.Rows[0]["address"], table.Rows[0]["city"], table.Rows[0]["state"], table.Rows[0]["zipCode"],
-                table.Rows[0]["phone"], table.Rows[0]["ssn"], table.Rows[0]["userName"/*.AddRandomDigits()*/], table.Rows[0]["password"],
+            registerPage.FillFormInfo(table.Rows[0]["firstName"].AddRandomDigits(), 
+                table.Rows[0]["lastName"].AddRandomDigits(),
+                table.Rows[0]["address"], table.Rows[0]["city"], 
+                table.Rows[0]["state"], table.Rows[0]["zipCode"],
+                table.Rows[0]["phone"], table.Rows[0]["ssn"], 
+                table.Rows[0]["userName"].AddRandomDigits(), 
+                table.Rows[0]["password"],
                 table.Rows[0]["confirm"]);
         }
         
