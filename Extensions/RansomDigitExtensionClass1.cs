@@ -2,7 +2,7 @@
 {
     public static class RansomDigitExtensionClass1
     {/// <summary>
-    /// Method for random digits
+    /// Method for random digits creation
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>

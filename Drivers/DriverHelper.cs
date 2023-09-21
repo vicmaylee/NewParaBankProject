@@ -28,7 +28,6 @@
             driver.Navigate().GoToUrl(configReader.GetData("Env:url"));
             return driver;  
         }
-
         public IWebDriver GetEdgeConfig()
         {
             new DriverManager().SetUpDriver(new EdgeConfig());
