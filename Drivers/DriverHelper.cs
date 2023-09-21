@@ -2,8 +2,8 @@
 {
     public class DriverHelper
     {
-        public IWebDriver driver;
-        public IObjectContainer container;
+        public IWebDriver? driver;
+        public IObjectContainer? container;
         ConfigReader configReader = new ConfigReader(); 
         public enum bType
         { Chrome, Edge, Firefox}
